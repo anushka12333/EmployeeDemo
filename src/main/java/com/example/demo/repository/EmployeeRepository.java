@@ -1,12 +1,13 @@
-package com.example.repository;
+package com.example.demo.repository;
 
 import java.time.LocalDate;
 import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.example.model.Employee;
+import com.example.demo.model.Employee;
+
 
 public interface EmployeeRepository extends JpaRepository<Employee,Long> {
-    List<Employee> findAllByJoiningDateBeforeAndExitDateAfter(LocalDate date1,LocalDate date2);
+ 
 }

@@ -1,11 +1,11 @@
-package com.example.model;
+package com.example.demo.model;
 
-import java.math.BigDecimal;
 import java.time.LocalDate;
 
-import javax.persistence.*;
-
-
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 import lombok.*;
 import lombok.Getter;
 import lombok.Setter;
@@ -15,7 +15,6 @@ import lombok.Setter;
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
-@Entity
 @Table(name="employee")
 public class Employee {
     @Id

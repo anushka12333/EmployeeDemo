@@ -1,20 +1,18 @@
 package com.example.demo;
 
+// import java.util.ArrayList;
+
+// import java.time.LocalDate;
+// import java.util.ArrayList;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-// import org.springframework.context.ApplicationContext;
 
-// import com.example.model.Employee;
-// import com.example.repository.EmployeeRepository;
-
-@SpringBootApplication
+@SpringBootApplication()
 public class DemoApplication {
 
 	public static void main(String[] args) {
-	 SpringApplication.run(DemoApplication.class, args);
-	// EmployeeRepository employeeRepository=context.getBean(EmployeeRepository.class);
-
-
+	SpringApplication.run(DemoApplication.class, args);
 	
 	}
 

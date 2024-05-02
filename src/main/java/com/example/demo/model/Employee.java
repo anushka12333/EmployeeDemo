@@ -2,23 +2,23 @@ package com.example.demo.model;
 
 import java.time.LocalDate;
 
+import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.Table;
-import lombok.*;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-
+@Entity
 @Setter
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
-@Table(name="employee")
 public class Employee {
     @Id
-    @GeneratedValue(strategy= GenerationType.IDENTITY)
+    @GeneratedValue(strategy= GenerationType.AUTO)
     private Long id;
     private String empName;
     private String department;
@@ -32,7 +32,5 @@ public class Employee {
                 + ", currency=" + currency + ", joiningDate=" + joiningDate + ", exitDate=" + exitDate + "]";
     }
 
-
     
-
 }
